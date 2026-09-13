@@ -4463,19 +4463,34 @@ textarea.glass-input {
     }
 
     /* Contact Section Mobile Overflow Fixes */
+    .contact-channels-panel, .contact-form-panel {
+        padding: 24px 16px !important;
+    }
     .channel-card {
         padding: 16px !important;
         gap: 12px !important;
     }
     .channel-info {
         min-width: 0 !important;
-        word-break: break-word !important;
+        word-break: normal !important;
+    }
+    .channel-label {
+        font-size: 0.65rem !important;
+        letter-spacing: 0.05em !important;
+        white-space: nowrap !important;
     }
     .channel-val {
-        font-size: 0.9rem !important;
+        font-size: 0.85rem !important;
+        white-space: nowrap !important;
     }
     .copy-badge {
-        padding: 6px 12px !important;
-        font-size: 0.75rem !important;
+        padding: 8px 14px !important;
+        font-size: 0.8rem !important;
+    }
+}
+@media (max-width: 380px) {
+    .channel-val {
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
