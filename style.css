@@ -4440,4 +4440,42 @@ textarea.glass-input {
     * {
         will-change: auto !important;
     }
+
+    /* Bio Section Alignment Fixes */
+    .profile-role-pill {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        text-align: center !important;
+        gap: 6px !important;
+        line-height: 1.6 !important;
+    }
+    .profile-role-pill .dot-sep {
+        display: none !important;
+    }
+    .profile-actions-row {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .profile-actions-row .btn-apple-primary,
+    .profile-actions-row .btn-apple-glass {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    /* Contact Section Mobile Overflow Fixes */
+    .channel-card {
+        padding: 16px !important;
+        gap: 12px !important;
+    }
+    .channel-info {
+        min-width: 0 !important;
+        word-break: break-word !important;
+    }
+    .channel-val {
+        font-size: 0.9rem !important;
+    }
+    .copy-badge {
+        padding: 6px 12px !important;
+        font-size: 0.75rem !important;
+    }
 }
