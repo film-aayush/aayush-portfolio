@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Aayush Pillai — Cinematographer & Filmmaker</title>
+    <meta name="description" content="Portfolio of Aayush Pillai — Cinematographer, Assistant Director, Editor, and Filmmaker specializing in Audio-Visual Communication and immersive cinema.">
+    <meta name="theme-color" content="#060608">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aayush Pillai — Cinematographer & Filmmaker">
+    <meta property="og:description" content="Immersive cinematic narratives, camera work, directing, and post-production.">
+    
+    <!-- Editorial Fonts: Playfair Display (Italic Serif) + Plus Jakarta Sans + Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=davinci-fix-v2">
+</head>
+<body>
+
+    <!-- ================= APPLE DYNAMIC ISLAND START ANIMATION ================= -->
+    <div id="dynamic-island-screen" class="dynamic-island-screen">
+        <div class="dynamic-island-veil"></div>
+        <div class="dynamic-island-container">
+            <div class="dynamic-island-pill" id="island-pill">
+                <!-- Compact State: Camera Lens + Sensor Dot (Phase 1) -->
+                <div class="island-compact-state">
+                    <div class="island-dot-camera"></div>
+                    <div class="island-dot-sensor"></div>
+                </div>
+
+                <!-- Expanded Content: 3 Disciplines + Soundwave (Phase 2) -->
+                <div class="island-expanded-inner">
+                    <!-- Icon 1: Camera (Cinematography) -->
+                    <div class="island-feature-icon" title="Cinematography">
+                        <svg class="island-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                        <span class="island-icon-label">Camera</span>
+                    </div>
+
+                    <div class="island-v-sep"></div>
+
+                    <!-- Icon 2: Clapperboard (Assistant Directing) -->
+                    <div class="island-feature-icon" title="Assistant Directing">
+                        <svg class="island-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 6 3 11l-.9-2.4c-.4-1.1.2-2.4 1.3-2.8l13.7-5c1.1-.4 2.4.2 2.8 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+                        <span class="island-icon-label">Direction</span>
+                    </div>
+
+                    <div class="island-v-sep"></div>
+
+                    <!-- Icon 3: Film Reel (Editing & Post) -->
+                    <div class="island-feature-icon" title="Editing & Post">
+                        <svg class="island-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="2.18" ry="2.18"/><line x1="7" x2="7" y1="2" y2="22"/><line x1="17" x2="17" y1="2" y2="22"/><line x1="2" x2="22" y1="12" y2="12"/><line x1="2" x2="7" y1="7" y2="7"/><line x1="2" x2="7" y1="17" y2="17"/><line x1="17" x2="22" y1="17" y2="17"/><line x1="17" x2="22" y1="7" y2="7"/></svg>
+                        <span class="island-icon-label">Editing</span>
+                    </div>
+
+                    <div class="island-v-sep"></div>
+
+                    <!-- Identity Capsule with Equalizer Soundwave -->
+                    <div class="island-identity-box">
+                        <div class="island-sound-wave">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <span class="island-creator">AAYUSH PILLAI</span>
+                    </div>
+                </div>
+
+                <div class="island-glass-glare"></div>
+            </div>
+            <div class="island-skip-badge" id="island-skip-btn">
+                <span>Entering Portfolio</span>
+                <span class="island-skip-sub">• Tap to skip</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ambient Cinema Atmospheric Glow & Studio Lighting -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+    <div class="ambient-glow glow-4"></div>
+    <div class="film-grain"></div>
+
+    <!-- Floating Ultra-Dark Pill Navigation Dock (Pilea Agency Aesthetic) -->
+    <header class="dock-wrapper">
+        <nav class="glass-dock" id="main-dock">
+            <div class="dock-nav-links">
+                <a href="#about" class="dock-item" data-section="about">
+                    <span>Bio</span>
+                </a>
+                <a href="#works" class="dock-item active" data-section="works">
+                    <span>Works</span>
+                </a>
+            </div>
+            <div class="dock-center-brand">
+                <a href="#hero" class="dock-brand-serif">Aayush Pillai</a>
+            </div>
+            <a href="#contact" class="dock-cta-pill">
+                <span>Let's Create</span>
+                <i data-lucide="arrow-up-right" class="cta-arrow"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION (PILEA AGENCY AESTHETIC) ================= -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                
+                <!-- Editorial Typographic Headline -->
+                <div class="hero-editorial-header">
+                    <h1 class="hero-editorial-title">
+                        <span class="editorial-line-sans">Crafting immersive</span>
+                        <span class="editorial-line-serif">cinematic narratives.</span>
+                    </h1>
+                    <p class="hero-editorial-sub">Cinematography, Direction & Post-Production</p>
+                    <div class="hero-cta-wrap">
+                        <a href="#works" class="btn-pilea-pill">
+                            <span>Explore Filmography</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Cinema Stage / Works Section: Interactive Sliding Doors Showcase -->
+                <div class="hero-stage-container" id="works">
+                    <!-- Warm Ambient Cinema Backlight & Watermark -->
+                    <div class="hero-cinema-backlight"></div>
+                    <div class="hero-watermark-text" aria-hidden="true">Aayush Pillai</div>
+
+                    <!-- Interactive Sliding Doors Filmography Overview -->
+                    <div class="hero-sliding-stage" id="hero-sliding-stage">
+                        
+                        <!-- Top Stage Navigation & Quick Filters -->
+                        <div class="sliding-stage-header">
+                            <div class="stage-header-meta">
+                                <span class="stage-archive-tag"><i data-lucide="layers"></i> Filmography Deck</span>
+                                <span class="stage-archive-count">9 Verified Productions</span>
+                            </div>
+                            <div class="stage-filter-pills" role="tablist" aria-label="Filter works">
+                                <button class="stage-filter-pill active" data-filter="all">All Works (9)</button>
+                                <button class="stage-filter-pill" data-filter="commercial">Commercials</button>
+                                <button class="stage-filter-pill" data-filter="narrative">Narrative & Film</button>
+                                <button class="stage-filter-pill" data-filter="post">Editing & Sound</button>
+                            </div>
+                        </div>
+
+                        <!-- Sliding Doors Track -->
+                        <div class="sliding-doors-track" id="slidingDoorsTrack" role="region" aria-label="Interactive Sliding Doors Filmography">
+                            
+                            <!-- Panel 01: Taste the Thunder (Default Active) -->
+                            <article class="door-panel is-active" data-index="01" data-category="commercial" data-modal-key="modal-thunder" tabindex="0" role="button" aria-expanded="true" aria-label="Taste the Thunder">
+                                <div class="door-bg" style="background-image: url('images/taste-the-thunder.png');"></div>
+                                <div class="door-scrim"></div>
+
+                                <!-- Collapsed Vertical Shutter Bar -->
+                                <div class="door-collapsed-bar" aria-hidden="true">
+                                    <span class="door-strip-num">01</span>
+                                    <span class="door-strip-discipline">Commercial</span>
+                                    <h3 class="door-strip-title">Taste the Thunder</h3>
+                                    <span class="door-strip-status-dot"></span>
+                                </div>
+
+                                <!-- Expanded Full Cinema Showcase Content -->
+                                <div class="door-expanded-content">
+                                    <div class="door-top-telemetry">
+                                        <div class="door-badge-group">
+                                            <span class="door-num-badge">// 01</span>
+                                            <span class="door-discipline-badge">Commercial & Music Feature</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="door-center-action">
+                                        <button class="door-play-btn" data-modal="modal-thunder" aria-label="Watch Taste the Thunder">
+                                            <i data-lucide="play"></i>
+                                            <span class="door-play-ring"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="door-bottom-meta">
+                                        <div class="door-title-block">
+                                            <span class="door-role-pill">Assistant to Gimbal Operator</span>
+                                            <h3 class="door-title">Taste the Thunder — Thums Up</h3>
+                                            <p class="door-credits">Hanumankind • Vishal Dadlani • Sushin Shyam</p>
+                                        </div>
+                                        <div class="door-action-wrap">
+                                            <button class="btn-door-inspect" data-modal="modal-thunder">
+                                                <span>Watch Film</span>
+                                                <i data-lucide="arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Panel 02: Caring Guptas — KEI Cables -->
+                            <article class="door-panel" data-index="02" data-category="commercial" data-modal-key="modal-kei" tabindex="0" role="button" aria-expanded="false" aria-label="Caring Guptas — KEI Cables">
+                                <div class="door-bg" style="background-image: url('images/caring-guptas.jpg');"></div>
+                                <div class="door-scrim"></div>
+
+                                <div class="door-collapsed-bar" aria-hidden="true">
+                                    <span class="door-strip-num">02</span>
+                                    <span class="door-strip-discipline">Commercial</span>
+                                    <h3 class="door-strip-title">Caring Guptas</h3>
+                                    <span class="door-strip-status-dot"></span>
+                                </div>
+
+                                <div class="door-expanded-content">
+                                    <div class="door-top-telemetry">
+                                        <div class="door-badge-group">
+                                            <span class="door-num-badge">// 02</span>
+                                            <span class="door-discipline-badge">Brand Commercial Campaign</span>
+                                        </div>
+                                        <div class="door-chips-group">
+                                            <span class="telemetry-chip"><i data-lucide="tv"></i> Brand Campaign</span>
+                                            <span class="telemetry-chip"><i data-lucide="clapperboard"></i> 3rd AD</span>
+                                            <span class="telemetry-chip"><i data-lucide="instagram"></i> Fork Media</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="door-center-action">
+                                        <button class="door-play-btn" data-modal="modal-kei" aria-label="Watch Caring Guptas">
+                                            <i data-lucide="play"></i>
+                                            <span class="door-play-ring"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="door-bottom-meta">
+                                        <div class="door-title-block">
+                                            <span class="door-role-pill">3rd Assistant Director</span>
+                                            <h3 class="door-title">Caring Guptas</h3>
+                                            <p class="door-credits">Client: <strong>KEI Cables</strong> • Production: <strong>Fork Media Group</strong></p>
+                                        </div>
+                                        <div class="door-action-wrap">
+                                            <button class="btn-door-inspect" data-modal="modal-kei">
+                                                <span>Watch Reel</span>
+                                                <i data-lucide="arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Panel 03: What Do You Want From Me -->
+                            <article class="door-panel" data-index="03" data-category="narrative" data-modal-key="modal-wdywfm" tabindex="0" role="button" aria-expanded="false" aria-label="What Do You Want From Me">
+                                <div class="door-bg" style="background-image: url('images/what-do-you-want-from-me.jpg');"></div>
+                                <div class="door-scrim"></div>
+
+                                <div class="door-collapsed-bar" aria-hidden="true">
+                                    <span class="door-strip-num">03</span>
+                                    <span class="door-strip-discipline">Narrative</span>
+                                    <h3 class="door-strip-title">What Do You Want From Me</h3>
+                                    <span class="door-strip-status-dot"></span>
+                                </div>
+
+                                <div class="door-expanded-content">
+                                    <div class="door-top-telemetry">
+                                        <div class="door-badge-group">
+                                            <span class="door-num-badge">// 03</span>
+                                            <span class="door-discipline-badge">Short Film</span>
+                                        </div>
+                                        <div class="door-chips-group">
+                                            <span class="telemetry-chip telemetry-soon"><i data-lucide="hourglass"></i> Coming Soon</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="door-center-action">
+                                        <button class="door-play-btn" data-modal="modal-wdywfm" aria-label="Inspect What Do You Want From Me">
+                                            <i data-lucide="sparkles"></i>
+                                            <span class="door-play-ring"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="door-bottom-meta">
+                                        <div class="door-title-block">
+                                            <span class="door-role-pill">Director's Assistant</span>
+                                            <h3 class="door-title">What Do You Want From Me</h3>
+                                            <p class="door-credits">Director: <strong>Neelambari Bhattacharya</strong></p>
+                                        </div>
+                                        <div class="door-action-wrap">
+                                            <button class="btn-door-inspect" data-modal="modal-wdywfm">
+                                                <span>Project Details</span>
+                                                <i data-lucide="arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Panel 04: Studio Ragdoll -->
+                            <article class="door-panel" data-index="04" data-category="narrative post" data-modal-key="modal-ragdoll" tabindex="0" role="button" aria-expanded="false" aria-label="Studio Ragdoll">
+                                <div class="door-bg" style="background-image: url('images/studio-ragdoll.png');"></div>
+                                <div class="door-scrim"></div>
+
+                                <div class="door-collapsed-bar" aria-hidden="true">
+                                    <span class="door-strip-num">04</span>
+                                    <span class="door-strip-discipline">Cinematography</span>
+                                    <h3 class="door-strip-title">Studio Ragdoll</h3>
+                                    <span class="door-strip-status-dot"></span>
+                                </div>
+
+                                <div class="door-expanded-content">
+                                    <div class="door-top-telemetry">
+                                        <div class="door-badge-group">
+                                            <span class="door-num-badge">// 04</span>
+                                            <span class="door-discipline-badge">Creative Production & Film</span>
+                                        </div>
+                                        <div class="door-chips-group">
+                                            <span class="telemetry-chip"><i data-lucide="camera"></i> Cinematographer</span>
+                                            <span class="telemetry-chip"><i data-lucide="scissors"></i> Video Editor</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="door-center-action">
+                                        <button class="door-play-btn" data-modal="modal-ragdoll" aria-label="Watch Studio Ragdoll">
+                                            <i data-lucide="play"></i>
+                                            <span class="door-play-ring"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="door-bottom-meta">
+                                        <div class="door-title-block">
+                                            <span class="door-role-pill">Cinematographer & Editor</span>
+                                            <h3 class="door-title">Studio Ragdoll</h3>
+                                            <p class="door-credits">Fashion Brand</p>
+                                        </div>
+                                        <div class="door-action-wrap">
+                                            <button class="btn-door-inspect" data-modal="modal-ragdoll">
+                                                <span>Watch Reel</span>
+                                                <i data-lucide="arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Panel 05: Ravi Mi -->
+                            <article class="door-panel" data-index="05" data-category="narrative post" data-modal-key="modal-ravimi" tabindex="0" role="button" aria-expanded="false" aria-label="Ravi Mi">
+                                <div class="door-bg" style="background-image: url('images/ravi-mi.png');"></div>
+                                <div class="door-scrim"></div>
+
+                                <div class="door-collapsed-bar" aria-hidden="true">
+                                    <span class="door-strip-num">05</span>
+                                    <span class="door-strip-discipline">Sound & Edit</span>
+                                    <h3 class="door-strip-title">Ravi Mi</h3>
+                                    <span class="door-strip-status-dot"></span>
+                                </div>
+
+                                <div class="door-expanded-content">
+                                    <div class="door-top-telemetry">
+                                        <div class="door-badge-group">
+                                            <span class="door-num-badge">// 05</span>
+                                            <span class="door-discipline-badge">Graduation Film • Marathi Cinema</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="door-center-action">
+                                        <button class="door-play-btn" data-modal="modal-ravimi" aria-label="Watch Ravi Mi">
+                                            <i data-lucide="play"></i>
+                                            <span class="door-play-ring"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="door-bottom-meta">
+                                        <div class="door-title-block">
+                                            <span class="door-role-pill">Sound & Edit</span>
+                                            <h3 class="door-title">Ravi Mi</h3>
+                                            <p class="door-credits">Audio-Visual Communication Graduation Film</p>
+                                        </div>
+                                        <div class="door-action-wrap">
+                                            <button class="btn-door-inspect" data-modal="modal-ravimi">
+                                                <span>Watch Film</span>
+                                                <i data-lucide="arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Panel 06: Aspora -->
+                            <article class="door-panel" data-index="06" data-category="post" data-modal-key="modal-aspora" tabindex="0" role="button" aria-expanded="false" aria-label="Aspora — Embracing Indian Culture">
+                                <div class="door-bg" style="background-image: url('images/aspora.jpg');"></div>
+                                <div class="door-scrim"></div>
+
+                                <div class="door-collapsed-bar" aria-hidden="true">
+                                    <span class="door-strip-num">06</span>
+                                    <span class="door-strip-discipline">Docu-Series</span>
+                                    <h3 class="door-strip-title">Aspora</h3>
+                                    <span class="door-strip-status-dot"></span>
+                                </div>
+
+                                <div class="door-expanded-content">
+                                    <div class="door-top-telemetry">
+                                        <div class="door-badge-group">
+                                            <span class="door-num-badge">// 06</span>
+                                            <span class="door-discipline-badge">Cultural Documentary & Brand Series</span>
+                                        </div>
+                                        <div class="door-chips-group">
+                                            <span class="telemetry-chip"><i data-lucide="scissors"></i> Video Edit</span>
+                                            <span class="telemetry-chip"><i data-lucide="sparkles"></i> Revolio Media</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="door-center-action">
+                                        <button class="door-play-btn" data-modal="modal-aspora" aria-label="Watch Aspora">
+                                            <i data-lucide="play"></i>
+                                            <span class="door-play-ring"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="door-bottom-meta">
+                                        <div class="door-title-block">
+                                            <span class="door-role-pill">Assistant to Video Editor</span>
+                                            <h3 class="door-title">Aspora — Embracing Indian Culture</h3>
+                                            <p class="door-credits">Production: <strong>Revolio Media</strong></p>
+                                        </div>
+                                        <div class="door-action-wrap">
+                                            <button class="btn-door-inspect" data-modal="modal-aspora">
+                                                <span>Watch Reel</span>
+                                                <i data-lucide="arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Panel 07: Malathi -->
+                            <article class="door-panel" data-index="07" data-category="narrative post" data-modal-key="modal-malathi" tabindex="0" role="button" aria-expanded="false" aria-label="Malathi">
+                                <div class="door-bg" style="background-image: url('images/malathi.png');"></div>
+                                <div class="door-scrim"></div>
+
+                                <div class="door-collapsed-bar" aria-hidden="true">
+                                    <span class="door-strip-num">07</span>
+                                    <span class="door-strip-discipline">Documentary</span>
+                                    <h3 class="door-strip-title">Malathi</h3>
+                                    <span class="door-strip-status-dot soon"></span>
+                                </div>
+
+                                <div class="door-expanded-content">
+                                    <div class="door-top-telemetry">
+                                        <div class="door-badge-group">
+                                            <span class="door-num-badge">// 07</span>
+                                            <span class="door-discipline-badge">Documentary Film</span>
+                                        </div>
+                                        <div class="door-chips-group">
+                                            <span class="telemetry-chip telemetry-soon"><i data-lucide="clock"></i> In Post — Coming Soon</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="door-center-action">
+                                        <button class="door-play-btn" data-modal="modal-malathi" aria-label="Inspect Malathi">
+                                            <i data-lucide="hourglass"></i>
+                                            <span class="door-play-ring"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="door-bottom-meta">
+                                        <div class="door-title-block">
+                                            <span class="door-role-pill">Post Production Assistant</span>
+                                            <h3 class="door-title">Malathi</h3>
+                                            <p class="door-credits">Director: <strong>Neelambari Bhattacharya</strong> • In Post</p>
+                                        </div>
+                                        <div class="door-action-wrap">
+                                            <button class="btn-door-inspect" data-modal="modal-malathi">
+                                                <span>Status Details</span>
+                                                <i data-lucide="arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Panel 08: Thought Process Films -->
+                            <article class="door-panel" data-index="08" data-category="commercial" data-modal-key="modal-thought" tabindex="0" role="button" aria-expanded="false" aria-label="Thought Process Films">
+                                <div class="door-bg" style="background-image: url('images/thought-process-films.png');"></div>
+                                <div class="door-scrim"></div>
+
+                                <div class="door-collapsed-bar" aria-hidden="true">
+                                    <span class="door-strip-num">08</span>
+                                    <span class="door-strip-discipline">Creative Direction</span>
+                                    <h3 class="door-strip-title">Thought Process</h3>
+                                    <span class="door-strip-status-dot"></span>
+                                </div>
+
+                                <div class="door-expanded-content">
+                                    <div class="door-top-telemetry">
+                                        <div class="door-badge-group">
+                                            <span class="door-num-badge">// 08</span>
+                                            <span class="door-discipline-badge">Studio Creative Development</span>
+                                        </div>
+                                        <div class="door-chips-group">
+                                            <span class="telemetry-chip"><i data-lucide="briefcase"></i> Junior CD</span>
+                                            <span class="telemetry-chip"><i data-lucide="palette"></i> Pitch Decks</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="door-center-action">
+                                        <button class="door-play-btn" data-modal="modal-thought" aria-label="Watch Thought Process Films">
+                                            <i data-lucide="play"></i>
+                                            <span class="door-play-ring"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="door-bottom-meta">
+                                        <div class="door-title-block">
+                                            <span class="door-role-pill">Junior Creative Director Intern</span>
+                                            <h3 class="door-title">Thought Process Films</h3>
+                                            <p class="door-credits">Studio Campaigns & Visual Treatment</p>
+                                        </div>
+                                        <div class="door-action-wrap">
+                                            <button class="btn-door-inspect" data-modal="modal-thought">
+                                                <span>Watch Reel</span>
+                                                <i data-lucide="arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Panel 09: The Tides Between Us -->
+                            <article class="door-panel" data-index="09" data-category="post" data-modal-key="modal-tides" tabindex="0" role="button" aria-expanded="false" aria-label="The Tides Between Us">
+                                <div class="door-bg" style="background-image: url('images/tides-between-us.png');"></div>
+                                <div class="door-scrim"></div>
+
+                                <div class="door-collapsed-bar" aria-hidden="true">
+                                    <span class="door-strip-num">09</span>
+                                    <span class="door-strip-discipline">BTS Doc</span>
+                                    <h3 class="door-strip-title">The Tides Between Us</h3>
+                                    <span class="door-strip-status-dot"></span>
+                                </div>
+
+                                <div class="door-expanded-content">
+                                    <div class="door-top-telemetry">
+                                        <div class="door-badge-group">
+                                            <span class="door-num-badge">// 09</span>
+                                            <span class="door-discipline-badge">Behind The Scenes Documentary</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="door-center-action">
+                                        <button class="door-play-btn" data-modal="modal-tides" aria-label="Watch The Tides Between Us">
+                                            <i data-lucide="play"></i>
+                                            <span class="door-play-ring"></span>
+                                        </button>
+                                    </div>
+
+                                    <div class="door-bottom-meta">
+                                        <div class="door-title-block">
+                                            <span class="door-role-pill">Assistant to Video Editor</span>
+                                            <h3 class="door-title">The Tides Between Us</h3>
+                                            <p class="door-credits">Production: <strong>Revolio Media</strong> • Script to Screen</p>
+                                        </div>
+                                        <div class="door-action-wrap">
+                                            <button class="btn-door-inspect" data-modal="modal-tides">
+                                                <span>Watch Reel</span>
+                                                <i data-lucide="arrow-up-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <!-- Bottom Navigation Hint & Keyboard Status Bar -->
+                        <div class="sliding-doors-footer">
+                            <div class="doors-hint-item">
+                                <i data-lucide="mouse-pointer" class="hint-icon"></i>
+                                <span>Hover any door to expand</span>
+                            </div>
+                            <div class="doors-hint-keys">
+                                <span class="kbd-key">←</span>
+                                <span class="kbd-key">→</span>
+                                <span class="hint-sub">navigate with arrows</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= ABOUT / BIO SECTION ================= -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-header about-section-header reveal-on-scroll">
+                    <div class="works-editorial-title-box text-center">
+                        <span class="works-lead-sans">About the filmmaker</span>
+                        <span class="works-lead-serif">the journey & craft.</span>
+                    </div>
+                </div>
+
+                <!-- Modern Dark Cinema Profile Feature Card -->
+                <div class="glass-panel profile-feature-panel reveal-on-scroll" data-tilt>
+                    <div class="glass-specular-layer"></div>
+                    <div class="profile-grid">
+                        <!-- Photo Column with Status Chip -->
+                        <div class="profile-photo-column">
+                            <div class="profile-photo-card">
+                                <img src="images/aayush-profile.png" alt="Aayush Pillai — Filmmaker & Cinematographer" class="profile-img">
+                                <div class="profile-photo-overlay"></div>
+                            </div>
+                            <div class="profile-photo-status">
+                                <span class="pulse-dot"></span>
+                                <span>Audio-Visual Graduate</span>
+                            </div>
+                        </div>
+
+                        <!-- 3-4 Sentences Bio Content -->
+                        <div class="profile-info-column">
+                            <div class="profile-role-pill">
+                                <span>CINEMATOGRAPHER</span>
+                                <span class="dot-sep">•</span>
+                                <span>ASSISTANT DIRECTOR</span>
+                                <span class="dot-sep">•</span>
+                                <span>EDITOR</span>
+                            </div>
+
+                            <h3 class="profile-name-title">Aayush Pillai</h3>
+
+                            <div class="profile-bio-summary">
+                                <p>
+                                    I'm <strong>Aayush Pillai</strong>, a media professional specializing in <strong>Audio-Visual Communication</strong>, with hands-on experience across the full filmmaking pipeline—cinematography, sound recording, editing, sound design, and colour grading. I bring a meticulous eye for detail and a strong creative vision to every narrative I craft.
+                                </p>
+                            </div>
+
+                            <!-- Specialization Pills with Interactive Easter Eggs -->
+                            <div class="profile-disciplines-row">
+                                <span class="profile-tag easter-egg-chip" data-easteregg="camera" role="button" tabindex="0" title="Click for Camera Flash!"><i data-lucide="camera"></i> Cinematographer</span>
+                                <span class="profile-tag easter-egg-chip" data-easteregg="clapper" role="button" tabindex="0" title="Click for Action & Cut!"><i data-lucide="clapperboard"></i> Assistant Director</span>
+                                <span class="profile-tag easter-egg-chip" data-easteregg="edit" role="button" tabindex="0" title="Click for Film Cut effect!"><i data-lucide="scissors"></i> Video Editing</span>
+                                <span class="profile-tag easter-egg-chip" data-easteregg="sound" role="button" tabindex="0" title="Click for Audio Waveform!"><i data-lucide="volume-2"></i> Sound Design</span>
+                                <span class="profile-tag easter-egg-chip" data-easteregg="color" role="button" tabindex="0" title="Click for RGB Color Breathing!"><i data-lucide="palette"></i> DaVinci Color Grading</span>
+                            </div>
+
+                            <div class="profile-actions-row">
+                                <a href="#works" class="btn-apple-primary">
+                                    <i data-lucide="film" class="btn-icon"></i>
+                                    <span>Explore Selected Works</span>
+                                </a>
+                                <a href="#contact" class="btn-apple-glass">
+                                    <i data-lucide="mail" class="btn-icon"></i>
+                                    <span>Get In Touch</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT & CONNECT SUITE ================= -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-pill">
+                        <i data-lucide="message-square" class="pill-icon"></i>
+                        <span>Get In Touch</span>
+                    </div>
+                    <h2 class="section-title">Let's Bring Your Next <br><span class="text-gradient">Vision to Life.</span></h2>
+                    <p class="section-subtitle">Open for cinematography, AD engagements, editing contracts, and film collaborations.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Interactive Apple Glass Channels -->
+                    <div class="glass-panel contact-channels-panel reveal-on-scroll" data-tilt>
+                        <div class="glass-specular-layer"></div>
+                        <div class="channels-title-row">
+                            <span class="channels-tag">DIRECT CHANNELS</span>
+                            <span class="status-live"><span class="pulse-dot"></span> Active Response</span>
+                        </div>
+
+                        <!-- Email Card -->
+                        <div class="channel-card glass-card" id="copy-email-btn" role="button" tabindex="0" title="Click to copy email">
+                            <div class="channel-icon-wrap">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="channel-info">
+                                <span class="channel-label">Email Inquiries</span>
+                                <span class="channel-val">film.aayush@icloud.com</span>
+                            </div>
+                            <div class="channel-action">
+                                <span class="copy-badge"><i data-lucide="copy"></i> Copy</span>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <a href="tel:+919082197543" class="channel-card glass-card">
+                            <div class="channel-icon-wrap">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="channel-info">
+                                <span class="channel-label">Phone / WhatsApp</span>
+                                <span class="channel-val">+91 90821 97543</span>
+                            </div>
+                            <div class="channel-action">
+                                <span class="copy-badge"><i data-lucide="arrow-up-right"></i> Call</span>
+                            </div>
+                        </a>
+
+                        <!-- Instagram Card -->
+                        <a href="https://www.instagram.com/aayushpillaiii/" target="_blank" rel="noopener" class="channel-card glass-card">
+                            <div class="channel-icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </div>
+                            <div class="channel-info">
+                                <span class="channel-label">Instagram Portfolio</span>
+                                <span class="channel-val">@aayushpillaiii</span>
+                            </div>
+                            <div class="channel-action">
+                                <span class="copy-badge"><i data-lucide="arrow-up-right"></i> Follow</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Right: Tactile Glass Quick Inquiry Form -->
+                    <div class="glass-panel contact-form-panel reveal-on-scroll" data-tilt>
+                        <div class="glass-specular-layer"></div>
+                        <h3 class="form-title">Send a Quick Message</h3>
+                        <p class="form-desc">Inquire about project availability, rates, or creative collaborations.</p>
+
+                        <form id="inquiry-form" class="glass-form" onsubmit="event.preventDefault(); window.handleFormSubmit();">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" placeholder="Christopher Nolan" required class="glass-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <input type="email" id="form-email" placeholder="producer@studio.com" required class="glass-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-project-type">Project Scope</label>
+                                <select id="form-project-type" class="glass-input glass-select">
+                                    <option value="Cinematography">Cinematography / Camera Operation</option>
+                                    <option value="Assistant Direction">Assistant Direction (1st / 3rd AD)</option>
+                                    <option value="Video Editing">Video Editing & NLE Post</option>
+                                    <option value="Sound Design">Sound Design & Audio Recording</option>
+                                    <option value="Commercial Campaign">Commercial Campaign / Brand Film</option>
+                                    <option value="Other Collaboration">Other Creative Project</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message Details</label>
+                                <textarea id="form-message" rows="4" placeholder="Tell me about your film, timeline, shoot dates, or vision..." required class="glass-input"></textarea>
+                            </div>
+                            <button type="submit" class="btn-apple-primary w-full">
+                                <i data-lucide="send" class="btn-icon"></i>
+                                <span>Send Direct Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">AAYUSH PILLAI</span>
+                <span class="footer-tagline">Cinematographer • AD • Editor • Filmmaker</span>
+            </div>
+            <div class="footer-right">
+                <p>© 2026 Aayush Pillai. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#hero">Back to Top</a>
+                    <span class="dot-sep">•</span>
+                    <a href="https://www.instagram.com/aayushpillaiii/" target="_blank" rel="noopener">Instagram</a>
+                    <span class="dot-sep">•</span>
+                    <a href="mailto:film.aayush@icloud.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= VISIONOS GLASS MODAL / LIGHTBOX ================= -->
+    <div class="glass-modal-backdrop" id="modal-backdrop" aria-hidden="true">
+        <div class="glass-modal-container" id="modal-container">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="glass-modal-card glass-panel" id="modal-card">
+                <div class="glass-specular-layer"></div>
+                <div class="modal-body" id="modal-body-content">
+                    <!-- Injected dynamically via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= APPLE DYNAMIC TOAST NOTIFICATION ================= -->
+    <div class="glass-toast" id="apple-toast" aria-live="polite">
+        <div class="toast-indicator"></div>
+        <i data-lucide="check-circle-2" class="toast-icon"></i>
+        <span class="toast-message" id="toast-message">Email copied to clipboard</span>
+    </div>
+
+    <!-- App Scripts -->
+    <script src="script.js?v=davinci-fix"></script>
+</body>
+</html>
